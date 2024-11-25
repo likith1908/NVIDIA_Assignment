@@ -1,0 +1,8 @@
+hydra-core
+opencv-python
+pillow
+rich
+scipy
+torch
+torchvision
+gradio

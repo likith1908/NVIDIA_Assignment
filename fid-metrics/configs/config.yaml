@@ -1,0 +1,25 @@
+metrics:
+  - type: fid
+    model:
+      dims: 2048
+    data:
+      dataset:
+        resize_shape: [256, 512]
+      batch_size: 64
+      num_workers: 16
+
+  - type: fvd
+    model:
+      path: /content/drive/MyDrive/NVIDIA_Assignment/fid-metrics/i3d_pretrained_400.pt
+    data:
+      dataset:
+        sequence_length: 16
+        resize_shape: [224, 224]
+      batch_size: 4
+      num_workers: 16
+
+# num_iters: 1000
+paths: []
+# paths:
+#   - "/content/drive/MyDrive/NVIDIA_Assignment/fid-metrics/Real/Wa_S3D1_fC1.avi"
+#   - "/content/drive/MyDrive/NVIDIA_Assignment/fid-metrics/Synthetic/ZXHLY_synthetic_left_var1.mp4"
